@@ -11,8 +11,7 @@
 0x05 ADD imm  
 0x06 JMP addr  
 0x07 JZ addr  
-0x08 OUT  
-0x09   
+0x08 OUT     
 ```
 
 Monitor支持：  
