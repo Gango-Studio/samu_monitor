@@ -1,0 +1,2 @@
+# samu_monitor
+为树莓派Raspberry Pi Pico开发的模仿了1970年代末早期风格的机器码监控程序
