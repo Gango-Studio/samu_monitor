@@ -66,8 +66,6 @@ void run(uint32_t addr_run){
             break;
         }
         uint8_t opcode = memory[cpu.pc_cnt++];
-        // Implement the instruction execution logic here
-        // For demonstration, let's just increment the program counter
         switch(opcode){
             case 0x00:{// NOP
                 break;
@@ -134,8 +132,6 @@ void run(uint32_t addr_run){
     return ;
 }
 
-// ===== 以下为 Pico 适配代码，原有逻辑未改动 =====
-// Pico 上没有可用的 stdin 行缓冲，用 USB 串口逐字符读一行来替代 fgets
 static bool read_line(char* buf, size_t cap){
     size_t n = 0;
     for(;;){
@@ -161,7 +157,7 @@ static bool read_line(char* buf, size_t cap){
 }
 int main(){
     stdio_init_all();
-    stdio_usb_init();   // Pico 适配：启动 USB 串口
+    stdio_usb_init();   
 
     printf("=====Samu Monitor=====\n");
     char cmdline[256];
