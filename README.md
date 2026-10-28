@@ -26,7 +26,7 @@
 | 工具 | 版本 | 说明 |
 |---|---|---|
 | Pico SDK | 2.x（验证于 2.3.1） | 需要初始化 `lib/tinyusb` 子模块，USB 串口依赖它 |
-| Arm GNU Toolchain | 13.2+（验证于 15.2.Rel1） | 必须是 `arm-none-eabi`，**不是** `aarch64-none-elf` |
+| Arm GNU Toolchain | 13.2+（验证于 15.2.Rel1） |  `arm-none-eabi` |
 | CMake | 3.13+ | |
 | Ninja | 任意 | 可选，也可换 Make |
 
