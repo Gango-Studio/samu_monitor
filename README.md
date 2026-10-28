@@ -80,7 +80,7 @@ cmake --build build --parallel
 
 刷完后**正常插 USB**，系统会出现一个串口：
 
-- Windows：设备管理器 → 端口（COM 和 LPT） → 记下 `COMx`
+- Windows：设备管理器 → 端口（COM 和 LPT）
 - Linux：`/dev/ttyACM0`
 - macOS：`/dev/cu.usbmodem*`
 
@@ -96,6 +96,11 @@ screen /dev/ttyACM0 115200
 =====Samu Monitor=====
 ```
 
+Windows平台也可以直接使用samu.cmd串口终端脚本
+
+```
+.\samu.cmd
+```
 
 ### 命令
 
